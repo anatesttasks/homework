@@ -1,0 +1,32 @@
+plugins {
+	id "groovy"
+	id "idea"
+}
+
+repositories {
+	mavenCentral()
+}
+
+ext {
+	groovyVersion = '2.5.6'
+	gebVersion = '2.3.1'
+	gherkinVersion = '5.1.0'
+	seleniumVersion = '3.141.59'
+	cucumberJvmVersion = '3.0.2'
+	chromeDriverVersion = '74.0.3729.6'
+}
+
+dependencies {
+	compile "org.codehaus.groovy:groovy-all:$groovyVersion"
+	compile "org.gebish:geb-core:$gebVersion"
+	compile "org.seleniumhq.selenium:selenium-api:$seleniumVersion"
+
+	compile "io.cucumber:cucumber-core:$cucumberJvmVersion"
+	compile "io.cucumber:cucumber-groovy:$cucumberJvmVersion"
+	compile "io.cucumber:cucumber-junit:$cucumberJvmVersion"
+	compile "io.cucumber:gherkin:$gherkinVersion"
+
+	compile 'net.masterthought:cucumber-reporting:4.6.0'
+	compile "junit:junit:4.12"
+	compile "org.seleniumhq.selenium:selenium-chrome-driver:$seleniumVersion"
+}
