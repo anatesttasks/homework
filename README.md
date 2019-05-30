@@ -3,7 +3,7 @@ ___
 
 ### RUN FROM INTELLIJ IDEA
 All tests:  
-CukesRunner class allows to execute all tests directly via jUnit runner. It's present in every testing project, both web and api tests.
+CukesRunner class allows to execute all tests directly via jUnit runner. It's present in testing project.
 
 For running features one by one or by scenario (without CukesRunner), the glue must be defined as follows:  
 > _Edit Configurations (Run/Debug Configurations) --> Default --> Cucumber java —> Glue_  
