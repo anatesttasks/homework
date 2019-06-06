@@ -31,7 +31,7 @@ class HomePage extends Page {
 	}
 
 	void chooseLanguage(lang) {
-		countriesMenu.click()
+		languageDropdown.click()
 		languageText(lang).click()
 	}
 }

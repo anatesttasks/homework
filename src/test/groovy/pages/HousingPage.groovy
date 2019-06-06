@@ -22,10 +22,10 @@ class HousingPage extends Page {
         listOfHousingRecordPrices(wait: true) { $(".result-hood").siblings(".result-price") }
     }
 
-    boolean checkSortingTypes(List definedSortingTypes) {
+    void checkSortingTypes(List definedSortingTypes) {
         sortingTypeDropdown.click()
 
-        definedSortingTypes.each{ it ->
+        definedSortingTypes.each{
             sortingType(it).displayed
         }
 
@@ -62,10 +62,8 @@ class HousingPage extends Page {
     }
 
     List getListWithPrices() {
-        def prices = []
-        listOfHousingRecordPrices.each { it ->
-            prices.add(it.text().replace('€','') as int)
+        listOfHousingRecordPrices.collectNested {
+         it.text().replace('€','') as int
         }
-        prices
     }
 }

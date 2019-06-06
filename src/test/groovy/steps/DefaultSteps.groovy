@@ -38,5 +38,3 @@ When(~'^guest enables sorting by (.*)$') { String type ->
 Then(~'^all records are sorted by (.*)$') { String type ->
 	page.checkRecordsSortedByType(type)
 }
-
-

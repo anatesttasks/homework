@@ -31,5 +31,3 @@ Feature: Sorting functionality on Housing page
     | sortingType |
     | priceasc    |
     | pricedsc    |
-
-
