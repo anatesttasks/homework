@@ -11,6 +11,8 @@ For running features one by one or by scenario (without CukesRunner), the glue m
    _`src/test/groovy/env/`_  
 
 Web tests by default are executed with Chrome browser.
+ChromeDriver should be installed on local machine:
+```http://chromedriver.chromium.org/downloads```
 
 Report file can be found [../build/report/index.html]()  
 
